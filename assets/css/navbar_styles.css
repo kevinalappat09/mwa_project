@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn, .login-btn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.active a {
+    color: #7E22CE;
+}
+
+.nav-btn:hover, .login-btn:hover {
+    background-color: rgba(126, 34, 206, 0.1);
+    color: #7E22CE;
+    transform: translateY(-2px);
+}
+
+.recipes-btn {
+    color: #7E22CE;
+}
+
+.login-btn {
+    background-color: black;
+    color: white;
+}
+
+.login-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
