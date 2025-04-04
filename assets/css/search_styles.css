@@ -65,6 +65,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 20% 80%;
+    margin-bottom : 0px;
 }
 
 .search-bar-container {

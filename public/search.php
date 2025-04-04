@@ -268,5 +268,7 @@ $result = $stmt->get_result();
 
         </section>
     </main>
+    <?php include '../components/footer.php'; ?>
+
 </body>
 </html>

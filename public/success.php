@@ -16,5 +16,7 @@ session_start();
         <p>Welcome, your account has been created successfully.</p>
         <a href="./login.php">Go to Login</a>
     </main>
+    <?php include '../components/footer.php'; ?>
+
 </body>
 </html>

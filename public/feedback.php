@@ -54,5 +54,8 @@
             <button type="submit" class="feedback-btn" onclick="validateFeedback(event)">Submit Complaint</button>
         </form>
     </div>
+
+    <?php include '../components/footer.php'; ?>
+
 </body>
 </html>

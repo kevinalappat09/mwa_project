@@ -11,6 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <nav class="navbar">
     <div class="nav-buttons">
         <?php if (isset($_SESSION["user_id"])): ?>
+            <button class="nav-btn"><a href="../public/dashboard.php">Home</a></button>
             <button class="nav-btn"><a href="../public/search.php">Recipes</a></button>
             <a href="../public/dashboard.php" class="nav-btn" style="text-decoration: none;">
                 Welcome, <?php echo htmlspecialchars($_SESSION["user_name"]); ?>
