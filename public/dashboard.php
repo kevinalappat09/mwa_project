@@ -21,8 +21,8 @@ session_start();
 <body>
     <nav class="navbar">
         <div class="nav-buttons">
-            <button class="nav-btn recipes-btn active"><a href="./home.html">Home</a></button>
-            <button class="nav-btn"><a href="./recipe.html">Recipes</a></button>
+            <button class="nav-btn recipes-btn active"><a href="./dashboard.php">Home</a></button>
+            <button class="nav-btn"><a href="./search.php">Recipes</a></button>
 
             <?php if (isset($_SESSION["user_id"])): ?>
                 <a href="./cs.html" class="nav-btn" style="text-decoration:none;">
