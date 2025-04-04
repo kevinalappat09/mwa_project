@@ -22,7 +22,7 @@ session_start();
         <div class="hero-left">
             <h2>Fuel Your Health</h2>
             <p>Discover delicious, nutritious recipes designed for fitness and flavor lovers alike.</p>
-            <button><a href="./recipe.html" class="hero-btn">Explore Recipes</a></button>
+            <button><a href="../public/search.php" class="hero-btn">Explore Recipes</a></button>
         </div>
         <div class="hero-right">
             <img src="../assets/images/food.svg" alt="Healthy Food Illustration">
@@ -35,7 +35,7 @@ session_start();
             <div class="card-content">
                 <h3>School Tiffins</h3>
                 <p>Packed with both health and taste, these snacks keep kids energized through the day. Easy to make and fun to eat!</p>
-                <a href="./recipe.html">Find Recipes</a>
+                <a href="../public/search.php">Find Recipes</a>
             </div>
         </div>
         <div class="card">
@@ -43,7 +43,7 @@ session_start();
             <div class="card-content">
                 <h3>Health</h3>
                 <p>Nutritious, protein-packed meals designed to fuel your fitness journey. Eat well, feel great, and stay strong!</p>
-                <a href="./recipe.html">Find Recipes</a>
+                <a href="../public/search.php">Find Recipes</a>
             </div>
         </div>
         <div class="card">
@@ -51,7 +51,7 @@ session_start();
             <div class="card-content">
                 <h3>Allergy-Specific Foods</h3>
                 <p>Delicious recipes carefully crafted to avoid common allergens. Safe, tasty, and worry-free meals for everyone.</p>
-                <a href="./recipe.html">Find Recipes</a>
+                <a href="../public/search.php">Find Recipes</a>
             </div>
         </div>
     </section>
@@ -62,7 +62,7 @@ session_start();
         <div class="nutrition-left">
             <h2>Know What You Eat</h2>
             <p>We provide detailed nutritional breakdowns for every recipe. Stay informed about calories, protein, fats, and more before you cook!</p>
-            <button class="browse-btn"><a href="./recipe.html" class="hero-btn">Explore Recipes</a></button>
+            <button class="browse-btn"><a href="../public/search.php" class="hero-btn">Explore Recipes</a></button>
         </div>
         <div class="nutrition-right">
             <div class="nutrition-card">
@@ -99,7 +99,7 @@ session_start();
         <div class="allergy-right">
             <h2>Food Safety First</h2>
             <p>We provide clear allergy warnings on all recipes, helping you make informed choices. Check ingredients before trying a recipe.</p>
-            <button class="browse-btn"><a href="./recipe.html" class="hero-btn">Explore Recipes</a></button>
+            <button class="browse-btn"><a href="../public/search.php" class="hero-btn">Explore Recipes</a></button>
         </div>
     </section>
 

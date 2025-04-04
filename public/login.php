@@ -73,7 +73,7 @@ if (isset($_SESSION["user_id"])) {
                 </button>
 
                 <div class="signup-link">
-                    Don't have an account? <a href="./cs.html">SignUp</a>
+                    Don't have an account? <a href="./signup.php">SignUp</a>
                 </div>
             </div>
         </form>

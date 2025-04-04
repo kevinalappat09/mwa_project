@@ -70,7 +70,7 @@ include_once "../config/database.php";
                 </button>
 
                 <div class="login-link">
-                    Account already made? <a href="./cl.html">Login</a>
+                    Account already made? <a href="./login.php">Login</a>
                 </div>
             </div>
         </form>
