@@ -21,15 +21,15 @@ session_start();
 <body>
     <nav class="navbar">
         <div class="nav-buttons">
-            <button class="nav-btn recipes-btn active"><a href="./dashboard.php">Home</a></button>
-            <button class="nav-btn"><a href="./search.php">Recipes</a></button>
-
             <?php if (isset($_SESSION["user_id"])): ?>
-                <a href="./cs.html" class="nav-btn" style="text-decoration:none;">
+                <button class="nav-btn"><a href="./dashboard.php">Home</a></button>
+                <button class="nav-btn"><a href="./search.php">Recipes</a></button>
+                <a href="./cs.html" class="nav-btn" style="text-decoration: none;">
                     Welcome, <?php echo htmlspecialchars($_SESSION["user_name"]); ?>
                 </a>
             <?php else: ?>
-                <a href="../public/login.php" class="nav-btn" style="text-decoration:none;">Login</a>
+                <button class="nav-btn"><a href="./dashboard.php">Home</a></button>
+                <a href="../public/login.php" class="nav-btn" style="text-decoration: none;">Login</a>
             <?php endif; ?>
         </div>
 
@@ -37,6 +37,7 @@ session_start();
             <button class="nav-btn"><a href="../auth/logout.php">Logout</a></button>
         <?php endif; ?>
     </nav>
+
 
     <section class="hero">
         <div class="hero-left">
