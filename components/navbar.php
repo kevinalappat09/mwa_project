@@ -11,12 +11,12 @@ if (session_status() === PHP_SESSION_NONE) {
 <nav class="navbar">
     <div class="nav-buttons">
         <?php if (isset($_SESSION["user_id"])): ?>
-            <button class="nav-btn"><a href="./search.php">Recipes</a></button>
-            <a href="./cs.html" class="nav-btn" style="text-decoration: none;">
+            <button class="nav-btn"><a href="../public/search.php">Recipes</a></button>
+            <a href="../public/dashboard.php" class="nav-btn" style="text-decoration: none;">
                 Welcome, <?php echo htmlspecialchars($_SESSION["user_name"]); ?>
             </a>
         <?php else: ?>
-            <button class="nav-btn"><a href="./dashboard.php">Home</a></button>
+            <button class="nav-btn"><a href="../public/dashboard.php">Home</a></button>
             <a href="../public/login.php" class="nav-btn" style="text-decoration: none;">Login</a>
         <?php endif; ?>
     </div>
