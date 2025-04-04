@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body, p, a, li, button, input, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10%;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+}
+.hero-left {
+    flex: 1;
+    color: #7E22CE;
+}
+.hero-left h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hero-left p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.hero-left button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background: #7E22CE;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+.hero-left button:hover {
+    background: #5b1999;
+}
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-right img {
+    width: 80%;
+    max-width: 400px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+.card {
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #7E22CE;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    background: #7E22CE;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.card a:hover {
+    background: #5b1999;
+}
+
+.section-divider {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+}
+
+.nutrition-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+}
+
+.nutrition-left {
+    flex: 1;
+    color: #7E22CE;
+}
+
+.nutrition-left h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.nutrition-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.browse-btn {
+    padding: 12px 24px;
+    background: #7E22CE;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.browse-btn:hover {
+    background: #5b1999;
+}
+
+.nutrition-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nutrition-card {
+    background: #BBF7D0;
+    color: #16A34A; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nutrition-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nutrition-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutrition-details p {
+    margin: 5px 0;
+}
+
+.allergy-alerts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    gap : 20%;
+}
+
+.allergy-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.allergy-card {
+    background: #FDB9B9;
+    color: #B91C1C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.allergy-card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.allergy-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.allergy-list li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.allergy-right {
+    flex: 1;
+    color: #7E22CE;
+}
+
+.allergy-right h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.allergy-right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: white;
+}

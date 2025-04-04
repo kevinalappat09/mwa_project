@@ -1,5 +1,10 @@
 <?php
-session_start()
+session_start();
+
+if (isset($_SESSION["user_id"])) {
+    header("Location: dashboard.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +25,8 @@ session_start()
 <body>
     <nav class="navbar">
         <div class="nav-buttons">
-            <button class="nav-btn"><a href="./home.html">Home</a></button>
-            <button class="nav-btn"><a href="./recipe.html">Recipes</a></button>
+            <button class="nav-btn recipes-btn active"><a href="./dashboard.php">Home</a></button>
         </div>
-        <button class="login-btn"><a href="./cs.html">Signup</a></button>
     </nav>
 
     <div class="container">

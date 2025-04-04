@@ -20,10 +20,21 @@ include_once "../config/database.php";
 <body>
     <nav class="navbar">
         <div class="nav-buttons">
-            <button class="nav-btn"><a href="./home.html">Home</a></button>
+            <button class="nav-btn recipes-btn active"><a href="./home.html">Home</a></button>
             <button class="nav-btn"><a href="./recipe.html">Recipes</a></button>
+
+            <?php if (isset($_SESSION["user_id"])): ?>
+                <a href="./cs.html" class="nav-btn" style="text-decoration:none;">
+                    Welcome, <?php echo htmlspecialchars($_SESSION["first_name"] . ' ' . $_SESSION["last_name"]); ?>
+                </a>
+            <?php else: ?>
+                <a href="../auth/login.php" class="nav-btn" style="text-decoration:none;">Login</a>
+            <?php endif; ?>
         </div>
-        <button class="login-btn"><a href="./cl.html">Login</a></button>
+
+        <?php if (isset($_SESSION["user_id"])): ?>
+            <button class="nav-btn"><a href="../auth/logout.php">Logout</a></button>
+        <?php endif; ?>
     </nav>
     <div class="container">
         <div class="sidebar">
