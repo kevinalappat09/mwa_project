@@ -107,26 +107,10 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <title>Search Recipes</title>
-    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
     <link rel="stylesheet" href="../assets/css/search_styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-buttons">
-            <button class="nav-btn recipes-btn"><a href="./dashboard.php">Home</a></button>
-            <button class="nav-btn active"><a href="./search.php">Recipes</a></button>
-            <?php if (isset($_SESSION["user_id"])): ?>
-                <a href="./cs.html" class="nav-btn" style="text-decoration:none;">
-                    Welcome, <?php echo htmlspecialchars($_SESSION["user_name"]); ?>
-                </a>
-            <?php else: ?>
-                <a href="../public/login.php" class="nav-btn" style="text-decoration:none;">Login</a>
-            <?php endif; ?>
-        </div>
-        <?php if (isset($_SESSION["user_id"])): ?>
-            <button class="nav-btn"><a href="../auth/logout.php">Logout</a></button>
-        <?php endif; ?>
-    </nav>
+<?php include '../components/navbar.php'; ?>
 
     <main>
         <section class="search-bar-container">

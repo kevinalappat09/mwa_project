@@ -12,31 +12,14 @@ session_start();
     <title>FoodForAll</title>
 
     <link rel="stylesheet" href="../assets/css/home_styles.css">
-    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
     <link rel="stylesheet" href="../assets/css/footer_styles.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-buttons">
-            <?php if (isset($_SESSION["user_id"])): ?>
-                <button class="nav-btn"><a href="./dashboard.php">Home</a></button>
-                <button class="nav-btn"><a href="./search.php">Recipes</a></button>
-                <a href="./cs.html" class="nav-btn" style="text-decoration: none;">
-                    Welcome, <?php echo htmlspecialchars($_SESSION["user_name"]); ?>
-                </a>
-            <?php else: ?>
-                <button class="nav-btn"><a href="./dashboard.php">Home</a></button>
-                <a href="../public/login.php" class="nav-btn" style="text-decoration: none;">Login</a>
-            <?php endif; ?>
-        </div>
+    <?php include '../components/navbar.php'; ?>
 
-        <?php if (isset($_SESSION["user_id"])): ?>
-            <button class="nav-btn"><a href="../auth/logout.php">Logout</a></button>
-        <?php endif; ?>
-    </nav>
 
 
     <section class="hero">

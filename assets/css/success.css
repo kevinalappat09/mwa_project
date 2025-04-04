@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body, p, a, li, button, input, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+main {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 20px;
+}
+
+main a {
+    text-decoration : none;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 24px;
+    background-color : #7E22CE;
+    font-weight: bold;
+}

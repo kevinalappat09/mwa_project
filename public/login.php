@@ -14,7 +14,6 @@ if (isset($_SESSION["user_id"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="../assets/css/login_styles.css">
-    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
     <link rel="stylesheet" href="../assets/css/footer_styles.css">
 
 
@@ -23,11 +22,7 @@ if (isset($_SESSION["user_id"])) {
 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-buttons">
-            <button class="nav-btn recipes-btn active"><a href="./dashboard.php">Home</a></button>
-        </div>
-    </nav>
+    <?php include '../components/navbar.php'; ?>
 
     <div class="container">
         <div class="sidebar">

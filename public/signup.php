@@ -10,7 +10,6 @@ include_once "../config/database.php";
     <title>Signup Page</title>
 
     <link rel="stylesheet" href="../assets/css/signup_styles.css">
-    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
     <link rel="stylesheet" href="../assets/css/footer_styles.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,24 +17,7 @@ include_once "../config/database.php";
 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-buttons">
-            <button class="nav-btn recipes-btn active"><a href="./home.html">Home</a></button>
-            <button class="nav-btn"><a href="./recipe.html">Recipes</a></button>
-
-            <?php if (isset($_SESSION["user_id"])): ?>
-                <a href="./cs.html" class="nav-btn" style="text-decoration:none;">
-                    Welcome, <?php echo htmlspecialchars($_SESSION["first_name"] . ' ' . $_SESSION["last_name"]); ?>
-                </a>
-            <?php else: ?>
-                <a href="../auth/login.php" class="nav-btn" style="text-decoration:none;">Login</a>
-            <?php endif; ?>
-        </div>
-
-        <?php if (isset($_SESSION["user_id"])): ?>
-            <button class="nav-btn"><a href="../auth/logout.php">Logout</a></button>
-        <?php endif; ?>
-    </nav>
+    <?php include '../components/navbar.php'; ?>
     <div class="container">
         <div class="sidebar">
             <div class="rectangle-container">

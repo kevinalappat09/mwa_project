@@ -10,8 +10,11 @@ session_start();
     <link rel="stylesheet" href="../assets/css/success.css">
 </head>
 <body>
-    <h2>Signup Successful</h2>
-    <p>Welcome, your account has been created successfully.</p>
-    <a href="login.php">Go to Login</a>
+    <?php include '../components/navbar.php'; ?>
+    <main>
+        <h2>Signup Successful</h2>
+        <p>Welcome, your account has been created successfully.</p>
+        <a href="./login.php">Go to Login</a>
+    </main>
 </body>
 </html>

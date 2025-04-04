@@ -9,20 +9,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome -->
 
-        <link rel="stylesheet" href="../assets/css/navbar_styles.css">
         <link rel="stylesheet" href="../assets/css/footer_styles.css">
         <link rel="stylesheet" href="../assets/css/feedback_styles.css">
 
         <script src="./js/feedback_validation.js"></script>
     </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-buttons">
-            <button class="nav-btn"><a href="./home.html">Home</a></button>
-            <button class="nav-btn"><a href="./recipe.html">Recipes</a></button>
-        </div>
-        <button class="login-btn"><a href="./cs.html">Signup</a></button>
-    </nav>
+    <?php include '../components/navbar.php'; ?>
 
     <div class="complaint-form-container">
 
