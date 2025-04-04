@@ -60,6 +60,7 @@ body {
 .search-btn:hover {
     background: #5b1999;
     transform : translateY(-2px);
+    background-color: #218838;
 }
 
 main {

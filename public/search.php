@@ -132,7 +132,10 @@ $result = $stmt->get_result();
                     <input type="hidden" name="sort_order" value="<?php echo $_GET['sort_order']; ?>">
                 <?php endif; ?>
 
-                <button type="submit" class="search-btn">Search</button>
+                <div style="display: flex; justify-content: space-around; align-items: center">
+                    <button type="submit" class="search-btn">Search</button>
+                    <a href="submit.php" class="search-btn" title="Submit a Recipe">+</a>
+                </div>
             </form>
         </section>
 
