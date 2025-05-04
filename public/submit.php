@@ -100,6 +100,152 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Submit Recipe</title>
     <link rel="stylesheet" href="../assets/css/search_styles.css"> <!-- Reuse styles -->
     <link rel="stylesheet" href="../assets/css/submit_styles.css">
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Main container */
+.submit-main {
+    /* max-width: 800px; */
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.submit-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Form */
+.submit-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.submit-form input[type="text"],
+.submit-form input[type="number"],
+.submit-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+.submit-form textarea {
+    min-height: 80px;
+}
+
+/* Buttons */
+.submit-btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #7E22CE;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #7E22CE;
+}
+
+/* Ingredients and Steps */
+.ingredient-group,
+.step-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ingredient-group input,
+.step-group textarea {
+    flex: 1;
+}
+
+.ingredient-group button,
+.step-group button {
+    padding: 6px 12px;
+    font-size: 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ingredient-group button:hover,
+.step-group button:hover {
+    background-color: #c82333;
+}
+
+button[type="button"] {
+    margin-top: 10px;
+    background-color: #7E22CE;
+    color: #fff;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #7E22CE;
+}
+
+/* Messages */
+.success-msg {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-left: 5px solid #28a745;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.error-msg {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-left: 5px solid #dc3545;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+/* Required indicator */
+.required {
+    color: red;
+    margin-left: 4px;
+}
+
+    </style>
 </head>
 <body>
 <?php include '../components/navbar.php'; ?>

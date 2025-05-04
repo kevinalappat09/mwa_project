@@ -56,7 +56,7 @@ body {
 .submit-btn {
     margin-top: 25px;
     padding: 12px 20px;
-    background-color: #28a745;
+    background-color: #7E22CE;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -66,7 +66,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #218838;
+    background-color: #7E22CE;
 }
 
 /* Ingredients and Steps */
@@ -101,7 +101,7 @@ body {
 
 button[type="button"] {
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: #7E22CE;
     color: #fff;
     padding: 8px 14px;
     font-size: 0.9rem;
@@ -111,7 +111,7 @@ button[type="button"] {
 }
 
 button[type="button"]:hover {
-    background-color: #0069d9;
+    background-color: #7E22CE;
 }
 
 /* Messages */
